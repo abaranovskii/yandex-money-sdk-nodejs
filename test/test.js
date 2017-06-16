@@ -116,7 +116,7 @@ describe('Wallet', function(){
           done();
         });
     });
-    
+
   });
 });
 
@@ -166,11 +166,11 @@ describe("External payment", function () {
       };
       api.process({
         request_id: request_id,
-        ext_auth_success_uri: "http://lcoalhost:8000",
+        ext_auth_success_uri: "http://localhost:8000",
         ext_auth_fail_uri: "http://localhost:8000"
       }, processComplete);
     });
-    
+
   });
 
   describe("#exceptions", function () {
@@ -190,8 +190,8 @@ describe("External payment", function () {
         done();
       });
     });
-    
+
   });
-  
+
 });
 
